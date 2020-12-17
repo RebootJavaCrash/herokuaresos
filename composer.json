@@ -1,27 +1,19 @@
 {
-        "name": "titaniumnetwork-dev/titaniumlite",
-        "type": "project",
-        "license": "MIT",
-        "description": "Web proxy application project powered by PHP-Proxy library",
-        "keywords": ["php proxy application", "php proxy web", "proxy script", "php web proxy", "web proxy"],
-        "repositories": [
-                {
-                        "type": "vcs",
-                        "url": "https://github.com/Athlon1600/php-proxy-app"
-                }
-        ],
-        "require": {
-                "Athlon1600/php-proxy": "dev-master",
-                "Athlon1600/php-proxy-plugin-bundle": "dev-master",
-                "ext-mbstring": "^7.2",
-                "Athlon1600/php-proxy": "^5.0",
-                "ext-gd": "^7.2",
-                "ext-sqlite3": "^7.2",
-                "ext-imagick": "*"
-        },
-        "scripts": {
-                "post-create-project-cmd": [
-                        "php -f setup.txt"
-                ]
-        }
+  "name": "alloy-server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node app.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@lrnwebcomponents/simple-login": "^2.8.0",
+    "alloyproxy": "^1.1.0",
+    "cookie-parser": "^1.4.5",
+    "express": "^4.17.1",
+    "express-openid-connect": "^2.0.0"
+  }
 }
