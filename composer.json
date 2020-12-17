@@ -1,37 +1,27 @@
 {
-	"name": "laravel/laravel",
-	"description": "The Laravel Framework.",
-	"keywords": ["framework", "laravel"],
-	"require": {
-		"laravel/framework": "4.0.*"
-	},
-	"autoload": {
-		"classmap": [
-			"app/commands",
-			"app/controllers",
-			"app/models",
-			"app/database/migrations",
-			"app/database/seeds",
-			"app/tests/TestCase.php",
-			"app/libraries/"
-		]
-	},
-	"scripts": {
-		"post-install-cmd": [
-			"php artisan optimize"
-		],
-		"pre-update-cmd": [
-			"php artisan clear-compiled"
-		],
-		"post-update-cmd": [
-			"php artisan optimize"
-		],
-		"post-create-project-cmd": [
-			"php artisan key:generate"
-		]
-	},
-	"config": {
-		"preferred-install": "dist"
-	},
-	"minimum-stability": "dev"
+        "name": "titaniumnetwork-dev/titaniumlite",
+        "type": "project",
+        "license": "MIT",
+        "description": "Web proxy application project powered by PHP-Proxy library",
+        "keywords": ["php proxy application", "php proxy web", "proxy script", "php web proxy", "web proxy"],
+        "repositories": [
+                {
+                        "type": "vcs",
+                        "url": "https://github.com/Athlon1600/php-proxy-app"
+                }
+        ],
+        "require": {
+                "Athlon1600/php-proxy": "dev-master",
+                "Athlon1600/php-proxy-plugin-bundle": "dev-master",
+                "ext-mbstring": "^7.2",
+                "Athlon1600/php-proxy": "^5.0",
+                "ext-gd": "^7.2",
+                "ext-sqlite3": "^7.2",
+                "ext-imagick": "*"
+        },
+        "scripts": {
+                "post-create-project-cmd": [
+                        "php -f setup.txt"
+                ]
+        }
 }
